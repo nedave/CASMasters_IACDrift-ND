@@ -1,10 +1,10 @@
 provider "aws" {
-  region     = "eu-XXXXX-1"
-  access_key = "XXXXXXXXXXX
-  secret_key = "XXXXXXXXXXXX"
+  region                  = "eu-west-2"
+  shared_credentials_files = ["/Users/nedave/.aws/credentials"]
+  profile                 = "434843555728_AWSAdministratorAccess"
 }
 
-resource "aws_s3_bucket" "jmdrift-bucket" {
-  bucket = "jm-this-bucket-should-drift"
+resource "aws_s3_bucket" "nddrift-bucket" {
+  bucket = "nd-this-bucket-should-drift"
   
 }
